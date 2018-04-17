@@ -20,9 +20,14 @@ The first step for this program would be to research some similar programs we
 have completed earlier this year to get some ideas. Next we would implement for
 loops and iterators for each individual scenario that the user will face throughout.
 Next we will test the efficiency of the program through test cases and doubling
-experiments, such as the equals method and various others. 
+experiments, such as the equals method and various others.
 
 ### Plan:
 Our plan for this project is to use a similar method of implementation created in
 previous labs. This combination of methods will be similar to the `ArrayList`
-class of lab 9 and shift methods used in various other labs. Then
+class of lab 9 and shift methods used in various other labs. First we will encode
+the message, which is the Array List. Then we will send the message through each
+type of cypher and decode them. Then in our test cases we will check to make sure
+the actual output is equal to our expected output. The last part of our program
+will test the efficiency of each algorithm and finally we will evaluate the results
+and create a report.
