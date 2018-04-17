@@ -11,7 +11,7 @@ campaign of doubling experiments to measure the worst case time complexity.
 Our main idea for this project is to create a program that can encode messages
 that are read in from a user. These messages will be encoded using Caesar and
 Vigenere ciphers. The encoded messages can be sent to others than decoded. To
-evaluate our program we are going to use a doubling experiment.
+evaluate our program we are going to use a doubling experiment. We will also be anlyzing the efficiency of our program based on the empirical and analytic data we recieve.
 
 ### Initial Listing of Task:
 The first step for this program would be to research some similar programs we
@@ -19,4 +19,4 @@ have completed earlier this year to get some ideas. Next we would implement for
 loops and iterators for each individual scenario that the user will face throughout
 
 ### Plan:
-Our plan for this project is to use a similar method to
+Our plan for this project is to use a similar method of implementation created in previous labs. This combination of methods will be similar to the `ArrayList` class of lab 9 and substitutions used in 
