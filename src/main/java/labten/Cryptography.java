@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author
+ * @author Dillon Thoma, Ben Watto, Jordan Wilson, Robert Samuel
  */
 
 public class Cryptography {
