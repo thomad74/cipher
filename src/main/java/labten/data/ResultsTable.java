@@ -24,6 +24,28 @@ public class ResultsTable {
 
 
   public ResultsTable(int rowCount) {
-    results = new long [rowCount][COLUMN_NUMBER]
+    results = new long [rowCount][COLUMN_NUMBER];
+    currentRow = 0;
   }
+
+  public long[][] ResultsTable() {
+    return results;
+  }
+
+  public void addResult(long size, long timing) {
+    results[currentRow][SIZE] = size;
+    results[currentRow][TIMING] = timing;
+
+    if (currentRow == FIRST_ROW) {
+      results[currentRow][RATIO] = 0L;
+    } else {
+      if (results[currentRow - 1][TIMING] != 0L) {
+        double ratio = ((double)timing / results[currentRow - 1][TIMING]);
+        results[currentRow][RATIO] = Math.round(ratio);
+      } else {
+        results[currentRow][RATIO] = 0L;
+      }
+    }
+    currentRow++;
+    }
 }
