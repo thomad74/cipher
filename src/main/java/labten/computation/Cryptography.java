@@ -1,4 +1,4 @@
-package labten;
+package computation;
 
 import java.util.Date;
 import java.util.Scanner;
