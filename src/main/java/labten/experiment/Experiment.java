@@ -11,7 +11,7 @@ import labten.data.ResultsTable;
  * @author Jordan Wilson, Ben Watto, Robert Samuel, and Dillon Thoma
  */
 
-public class Experiemnt {
+public class Experiment {
 
   /** The campaign length for the Cryptography. */
   private static final int CRYPTOGRAPHY_CAMPAIGN_LENGTH = 6;
