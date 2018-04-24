@@ -27,4 +27,13 @@ public class RunCampaign implements Campaign {
 
   static final String ValidInputs = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
+  public String generateRandomString(int size) {
+    StringBuilder sb = new StringBuilder(size);
+    Random random = new Random();
+    for (int i = 0; i < size; i++) {
+      sb.append(ValidInputs.charAt(random.nextInt(ValidInputs.length())));
+    }
+    retun sb.toString();
+  }
+
 }
