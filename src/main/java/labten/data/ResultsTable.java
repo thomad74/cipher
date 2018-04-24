@@ -48,4 +48,16 @@ public class ResultsTable {
     }
     currentRow++;
     }
+    public int getRowCount() {
+      return currentRow;
+    }
+    public String toString() {
+      String resultsTextual = Arrays.deepToString(results)
+          .replace("], ", "\n")
+          .replace(", ", "\t\t")
+          .replace("[", "")
+          .replace("[[", "")
+          .replace("]]", "");
+      return "Size (#)\tTiming (ms)\tRatio (#)\n" + resultsTextual;
+    }
 }
