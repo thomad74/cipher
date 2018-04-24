@@ -33,7 +33,7 @@ public class RunCampaign implements Campaign {
     for (int i = 0; i < size; i++) {
       sb.append(ValidInputs.charAt(random.nextInt(ValidInputs.length())));
     }
-    retun sb.toString();
+    return sb.toString();
   }
 
 }
