@@ -6,14 +6,14 @@ package labten.cipher;
  * @author
  */
 
-public class Vigenere extends Cipher {
+public class VigenereCipher extends Cipher {
 
   /** Define the index at which an array starts. */
   private static int ARRAY_START = 0;
 
   /** Define the name of the algorithm. */
-  public Vigenere() {
-    name = "Cipher";
+  public VigenereCipher() {
+    name = "VigenereCipher";
   }
 
 
@@ -22,8 +22,8 @@ public class Vigenere extends Cipher {
    *
    *
    */
-   
-  public char[] sort(char[] source) {
+
+  public char[] cipher(char[] source) {
     int length = source.length;
     char[] sorted = new char[source.length];
     System.arraycopy(source, ARRAY_START, sorted, ARRAY_START, source.length);
@@ -43,7 +43,7 @@ public class Vigenere extends Cipher {
   public static void main(String[] args) {
     char[] letters = {'C', 'E', 'B', 'D', 'A', 'I', 'J', 'L', 'K', 'H', 'G', 'F'};
     System.out.println("Before: " + java.util.Arrays.toString(letters));
-    char[] sortedLetters = (new Vigenere()).cipher(letters);
+    char[] sortedLetters = (new VigenereCipher()).cipher(letters);
     System.out.println("After : " + java.util.Arrays.toString(sortedLetters));
   }
 }
