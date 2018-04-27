@@ -1,5 +1,7 @@
 package labten.computation;
 
+import labten.data.ResultsTable;
+
 import java.util.Date;
 import java.util.Scanner;
 import java.util.Random;
@@ -11,6 +13,8 @@ import java.util.ArrayList;
  */
 
 public class Cryptography {
+
+
   public static String encrypt(String text, final String key) {
         String res = "";
         text = text.toUpperCase();
@@ -47,4 +51,5 @@ public class Cryptography {
         System.out.println("Encrypted message: " + encryptedMsg);
         System.out.println("Decrypted message: " + decrypt(encryptedMsg, key));
   }
+
 }
