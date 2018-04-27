@@ -13,26 +13,14 @@ import labten.data.ResultsTable;
 
 public class Experiment {
 
-  /** The campaign length for the Cryptography. */
-  private static final int CRYPTOGRAPHY_CAMPAIGN_LENGTH = 6;
-
-  /** Run the recursive experiment. */
-  public static void runCryptographyExperiment() {
-    RunCampaign runComputationCampaign = new RunCampaign();
-    // Create a RecursiveFibonacciComputation and run it in a campaign
-    CryptographyComputation cryptography = new CryptographyComputation();
-    ResultsTable CryptographyResultsTable =
-        runComputationCampaign.run(cryptography, CRYPTOGRAPHY_CAMPAIGN_LENGTH);
-    System.out.println();
-    System.out.println("Results of an experiment campaign with "
-                       + Cryptography.getName() + ":\n");
-    System.out.println(CryptographyResultsTable.toString());
-    System.out.println();
-  }
-
-  /** Run the experiment campaigns for a different number of rounds. */
+  /** Run Cryptography in an experiment campaign. */
   public static void main(String[] args) {
-    runCryptographyExperiment();
-  }
+    RunCampaign runCampaign = new RunCampaign();
+    Cryptography cryptography = new Cryptography();
+    ResultsTable resultsTable = runCampaign.run();
+    System.out.println();
+    System.out.println("Results of an experiment campaign: \n");
+    System.out.println(resultsTable.toString());
+    System.out.println();
 
 }
