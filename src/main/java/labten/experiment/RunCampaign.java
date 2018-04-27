@@ -25,35 +25,47 @@ public class RunCampaign implements Campaign {
     /** The indentation level for the output. */
     private static final String IDENTATION = "  ";
 
+    static final String Inputs = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
     /** Randomly generate data to use for an experiment. */
-    public int[] generateRandomData(int size) {
+    public String generateRandomData(int size) {
+      StringBuilder sb = new StringBuilder(size);
       Random random = new Random();
-      int[] generated = new int[size];
-      //TODO: use a stringbuilder to create an array of char/strings
       for (int i = 0; i < size; i++) {
-        size = (random.nextInt());
+        sb.append(Inputs.charAt(random.nextInt(Inputs.length())));
       }
-      return generated;
+
+
+      return sb.toString();
     }
 
     /** Run the cipher in an experiment campaign. */
     public ResultsTable run(Cipher cipher) {
       int campaignRound = 0;
-      int currentInputSize = INPUT_SIZE_START;
+      char currentInputSize = INPUT_SIZE_START;
       ResultsTable results = new ResultsTable(CAMPAIGN_LENGTH);
+
       System.out.println("Starting a campaign of experiments with " + cipher.getName() + " ...");
       while (campaignRound < CAMPAIGN_LENGTH) {
-        int[] arraySize = generateRandomData(currentInputSize);
+        // TODO: Generate the input array of the required size
+
+
+
         long timeBefore = System.currentTimeMillis();
-        cipher.cipher(arraySize);
+        //cipher.cipher(arraySize);
         long timeAfter = System.currentTimeMillis();
         long timeElapsed = timeAfter - timeBefore;
+
+        // Add the result to the instance of the ResultsTable
         results.addResult((long)currentInputSize, timeElapsed);
         System.out.println(IDENTATION + "Running round " + campaignRound
             + " with input size " + currentInputSize);
-        currentInputSize = currentInputSize * INPUT_GROWTH_FACTOR;
-        campaignRound++;
 
+        // Grow to the next size for the input
+      //  currentInputSize = currentInputSize * INPUT_GROWTH_FACTOR;
+
+        // Go to the next round of the experiment campaign
+        campaignRound++;
       }
       System.out.println("... Finishing a campaign of experiments with " + cipher.getName());
       return results;
