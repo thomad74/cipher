@@ -22,5 +22,6 @@ public class Experiment {
     System.out.println("Results of an experiment campaign: \n");
     System.out.println(resultsTable.toString());
     System.out.println();
+  }
 
 }
