@@ -6,17 +6,17 @@ package labfive.sort;
  * @author
  */
 
-public class Caesar extends Cipher {
+public class CaesarCipher extends Cipher {
 
   /** Define the name of this algorithm. */
-  public Caesar() {
-    name = "Caesar";
+  public CaesarCipher() {
+    name = "CaesarCipher";
   }
 
   /**
    * An implementation of the Caesar algorithm.
    *
-   * 
+   *
    */
   public char[] cipher(char[] source) {
     int length = source.length;
@@ -38,7 +38,7 @@ public class Caesar extends Cipher {
   public static void main(String[] args) {
     char[] letters = {'C', 'E', 'B', 'D', 'A', 'I', 'J', 'L', 'K', 'H', 'G', 'F'};
     System.out.println("Before: " + java.util.Arrays.toString(letters));
-    char[] sortedLetters = (new Caesar()).cipher(letters);
+    char[] sortedLetters = (new CaesarCipher()).cipher(letters);
     System.out.println("After : " + java.util.Arrays.toString(sortedLetters));
   }
 }
