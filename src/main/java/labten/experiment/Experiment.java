@@ -1,8 +1,8 @@
 package labten.experiment;
 
-import labten.cipher.Caesar;
+import labten.cipher.CaesarCipher;
 import labten.cipher.Cipher;
-import labten.cipher.Vigenere;
+import labten.cipher.VigenereCipher;
 import labten.data.ResultsTable;
 
 /**
