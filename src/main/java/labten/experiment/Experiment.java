@@ -17,7 +17,7 @@ public class Experiment {
   public static void main(String[] args) {
     RunCampaign runCampaign = new RunCampaign();
     Cryptography cryptography = new Cryptography();
-    ResultsTable resultsTable = runCampaign.run();
+    ResultsTable resultsTable = runCampaign.run(computation, campaignLength);
     System.out.println();
     System.out.println("Results of an experiment campaign: \n");
     System.out.println(resultsTable.toString());
