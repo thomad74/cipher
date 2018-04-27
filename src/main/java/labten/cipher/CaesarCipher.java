@@ -1,4 +1,4 @@
-package labfive.sort;
+package labten.cipher;
 
 /**
  * An implementation of the Caesar algorithm.
@@ -14,7 +14,7 @@ public class CaesarCipher extends Cipher {
   }
 
   /**
-   * An implementation of the Caesar algorithm.
+   * TODO:An implementation of the Caesar algorithm.
    *
    *
    */
