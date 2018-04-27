@@ -1,55 +1,49 @@
-package labten.computation;
-
-import labten.data.ResultsTable;
-
-import java.util.Date;
-import java.util.Scanner;
-import java.util.Random;
-import java.util.ArrayList;
+package labten.cipher;
 
 /**
+ * An implementation of the Vigenere algorithm.
  *
- * @author Dillon Thoma, Ben Watto, Jordan Wilson, Robert Samuel
+ * @author
  */
 
-public class Cryptography {
+public class Vigenere extends Cipher {
 
+  /** Define the index at which an array starts. */
+  private static int ARRAY_START = 0;
 
-  public static String encrypt(String text, final String key) {
-        String res = "";
-        text = text.toUpperCase();
-        for (int i = 0, j = 0; i < text.length(); i++){
-            char c = text.charAt(i);
-            if (c < 'A' || c > 'Z'){
-                continue;
-            }
-            res += (char) ((c + key.charAt(j) - 2 * 'A') % 26 + 'A');
-            j = ++j % key.length();
-        }
-        return res;
+  /** Define the name of the algorithm. */
+  public Vigenere() {
+    name = "Cipher";
   }
 
-  public static String decrypt(String text, final String key) {
-        String res = "";
-        text = text.toUpperCase();
-        for (int i = 0, j = 0; i < text.length(); i++) {
-            char c = text.charAt(i);
-            if (c < 'A' || c > 'Z') {
-                continue;
-            }
-            res += (char) ((c - key.charAt(j) + 26) % 26 + 'A');
-            j = ++j % key.length();
+
+  /**
+   * An implementation of the Vigenere algorithm.
+   *
+   *
+   */
+   
+  public char[] sort(char[] source) {
+    int length = source.length;
+    char[] sorted = new char[source.length];
+    System.arraycopy(source, ARRAY_START, sorted, ARRAY_START, source.length);
+    for (int i = 0; i < length; i++) {
+      for (int j = 0; j < (length - 1); j++) {
+        if (sorted[j] > sorted[j + 1]) {
+          char temporary = sorted[j];
+          sorted[j] = sorted[j + 1];
+          sorted[j + 1] = temporary;
         }
-        return res;
+      }
     }
-
-  public static void main(String[] args) {
-        String key = "VIGENERECIPHER";
-        String message = "testing if it is correct";
-        String encryptedMsg = encrypt(message, key);
-        System.out.println("String: " + message);
-        System.out.println("Encrypted message: " + encryptedMsg);
-        System.out.println("Decrypted message: " + decrypt(encryptedMsg, key));
+    return sorted;
   }
 
+  /** Demonstrate the use of the BubbleSort algorithm. */
+  public static void main(String[] args) {
+    char[] letters = {'C', 'E', 'B', 'D', 'A', 'I', 'J', 'L', 'K', 'H', 'G', 'F'};
+    System.out.println("Before: " + java.util.Arrays.toString(letters));
+    char[] sortedLetters = (new Vigenere()).cipher(letters);
+    System.out.println("After : " + java.util.Arrays.toString(sortedLetters));
+  }
 }
