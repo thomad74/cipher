@@ -24,19 +24,8 @@ public class VigenereCipher extends Cipher {
    */
 
   public char[] cipher(char[] source) {
-    int length = source.length;
-    char[] sorted = new char[source.length];
-    System.arraycopy(source, ARRAY_START, sorted, ARRAY_START, source.length);
-    for (int i = 0; i < length; i++) {
-      for (int j = 0; j < (length - 1); j++) {
-        if (sorted[j] > sorted[j + 1]) {
-          char temporary = sorted[j];
-          sorted[j] = sorted[j + 1];
-          sorted[j + 1] = temporary;
-        }
-      }
-    }
-    return sorted;
+
+    return source;
   }
 
   /** Demonstrate the use of the BubbleSort algorithm. */
