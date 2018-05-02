@@ -21,10 +21,9 @@ public class TestCaesarCipher {
   /** The starting character. */
   private static char STARTING_CHARACTER = 'a';
 
-//
-// @Test
-//   public void cipherCanEncode() {
-//     String message = encryptedMsg.getKey().substring(0, 10);
-//     assertEquals(message, encryptedMsg.encode("aaaaaaaaaa"));
-//   }
+  // @Test
+  //   public void cipherCanEncode() {
+  //     String message = encryptedMsg.getKey().substring(0, 10);
+  //     assertEquals(message, encryptedMsg.encode("aaaaaaaaaa"));
+  //   }
 }
