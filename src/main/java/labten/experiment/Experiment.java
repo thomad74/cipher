@@ -15,6 +15,7 @@ import labten.data.ResultsTable;
 
 public class Experiment {
 
+  /** Run the ciphering experiment. */
   public static void main(String[] args) {
     RunCampaign runCipherCampaign = new RunCampaign();
 
@@ -28,9 +29,11 @@ public class Experiment {
 
     // Create a Vigenere Cipher and run it in a campaign
     VigenereCipher vigenereCipher = new VigenereCipher();
-    ResultsTable vigenereCipherResultsTable = runCipherCampaign.run(vigenereCipher);
+    ResultsTable vigenereCipherResultsTable =
+        runCipherCampaign.run(vigenereCipher);
     System.out.println();
-    System.out.println("Results of an experiment campaign with " + vigenereCipher.getName() + ":\n");
+    System.out.println("Results of an experiment campaign with "
+        + vigenereCipher.getName() + ":\n");
     System.out.println(vigenereCipherResultsTable.toString());
     System.out.println();
   }
