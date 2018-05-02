@@ -18,15 +18,15 @@ public class CaesarCipher extends Cipher {
    *
    *
    */
-  public char[] cipher(char[] source) {
+  public String[] cipher(String[] source) {
     return source;
   }
 
   /** Demonstrate the use of the Caesar algorithm. */
   public static void main(String[] args) {
-    char[] letters = {'C', 'E', 'B', 'D', 'A', 'I', 'J', 'L', 'K', 'H', 'G', 'F'};
+    String[] letters = {"fortnite rulez"};
     System.out.println("Before: " + java.util.Arrays.toString(letters));
-    char[] sortedLetters = (new CaesarCipher()).cipher(letters);
+    String[] sortedLetters = (new CaesarCipher()).cipher(letters);
     System.out.println("After : " + java.util.Arrays.toString(sortedLetters));
   }
 }
