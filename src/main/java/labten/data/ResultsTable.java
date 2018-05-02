@@ -2,9 +2,8 @@ package labten.data;
 
 import java.util.Arrays;
 
-/**
-* A results table that stores data from running a timing experiment
-*/
+/** A results table that stores data from running a timing experiment.
+  */
 
 public class ResultsTable {
 
@@ -57,21 +56,21 @@ public class ResultsTable {
       }
     }
     currentRow++;
-    }
+  }
 
-    /** Return the number of rows current in the table. */
-    public int getRowCount() {
-      return currentRow;
-    }
+  /** Return the number of rows current in the table. */
+  public int getRowCount() {
+    return currentRow;
+  }
 
-    /** Return a string of the array-based table. */
-    public String toString() {
-      String resultsTextual = Arrays.deepToString(results)
-          .replace("], ", "\n")
-          .replace(", ", "\t\t")
-          .replace("[", "")
-          .replace("[[", "")
-          .replace("]]", "");
-      return "Size (#)\tTiming (ms)\tRatio (#)\n" + resultsTextual;
-    }
+  /** Return a string of the array-based table. */
+  public String toString() {
+    String resultsTextual = Arrays.deepToString(results)
+        .replace("], ", "\n")
+        .replace(", ", "\t\t")
+        .replace("[", "")
+        .replace("[[", "")
+        .replace("]]", "");
+    return "Size (#)\tTiming (ms)\tRatio (#)\n" + resultsTextual;
+  }
 }
