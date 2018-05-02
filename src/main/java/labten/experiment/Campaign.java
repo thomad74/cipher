@@ -1,7 +1,7 @@
 package labten.experiment;
 
-import labten.data.ResultsTable;
 import labten.cipher.Cipher;
+import labten.data.ResultsTable;
 
 /**
  * A Campaign interface used to run an experiment.
@@ -11,9 +11,7 @@ import labten.cipher.Cipher;
 
 public interface Campaign {
 
-  /**
-   *
-   */
+  /** Require that any Campaign implementer can run a Cipher in an experiment. */
   public ResultsTable run(Cipher cipher);
 
 }
