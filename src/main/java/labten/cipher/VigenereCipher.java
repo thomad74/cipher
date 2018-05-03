@@ -24,6 +24,10 @@ public class VigenereCipher extends Cipher {
    */
 
   public String[] cipher(String[] source) {
+    int length = source.length;
+    char[] sorted = new char[source.length];
+    System.arraycopy(source, ARRAY_START, sorted, ARRAY_START, source.length);
+
 
     return source;
   }
