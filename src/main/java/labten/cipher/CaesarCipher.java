@@ -18,11 +18,7 @@ public class CaesarCipher extends Cipher {
    *
    *
    */
-<<<<<<< HEAD
   public String[] cipher(String[] source) {
-
-=======
-  public String[] cipher(String[] source, int shift) {
     String[] source = new String[source];
     StringBuffer result = new StringBuffer();
     for (int i = 0; i < source.length(); i++) {
@@ -34,7 +30,6 @@ public class CaesarCipher extends Cipher {
         result.append(ch);
       }
     }
->>>>>>> 5bd1a02c931fabdd4ba19717cb10571c0d6ba09b
     return source;
   }
 
