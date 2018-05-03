@@ -29,8 +29,9 @@ public class CaesarCipher extends Cipher {
     String[] sorted = new String[source.length];
 
     int key = 1;
-
+// Makes a copy of the source array list
     System.arraycopy(source, ARRAY_START, sorted, ARRAY_START, source.length);
+// iterates through the sorted array list and changes all the characters to upper case
     for (int i = 0; i < sorted.length; i++) {
       sorted[i] = sorted[i].toUpperCase();
     }
