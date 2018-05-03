@@ -24,6 +24,16 @@ public class TestCaesarCipher {
   /** The starting character. */
   private static char STARTING_CHARACTER = 'a';
 
+  /** A method to determine if an array is isSorted. */
+  private boolean isSorted(char[] array) {
+    for (int i = 0; i < array.length - 1; i++) {
+      if (array[i] > array[i + 1]) {
+        return false;
+      }
+    }
+    return true;
+  }
+
   @Test
     public void testCaesarCipher() {
       // String message = encryptedMsg.getKey().substring(0, 10);

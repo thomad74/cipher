@@ -35,8 +35,10 @@ public class CaesarCipher extends Cipher {
     for (int i = 0; i < sorted.length; i++) {
       sorted[i] = sorted[i].toUpperCase();
     }
+
     //char[] plainTextChar = sorted.toCharArray();
-    String test = Arrays.toString(sorted);
+    String[] test = new String[Arrays.toString(sorted)];
+    //String test = Arrays.toString(sorted);
     char[] plainTextChar = test.toCharArray();
 
 
