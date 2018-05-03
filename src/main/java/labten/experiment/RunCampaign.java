@@ -47,7 +47,7 @@ public class RunCampaign implements Campaign {
       // TODO: Generate the input array of the required size
       //String arraySize = generateRandomData(currentInputSize);
       long timeBefore = System.currentTimeMillis();
-      //cipher.cipher(currentInputSize);
+      cipher.cipher(currentInputSize);
       long timeAfter = System.currentTimeMillis();
       long timeElapsed = timeAfter - timeBefore;
 
