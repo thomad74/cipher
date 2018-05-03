@@ -24,7 +24,7 @@ public abstract class Cipher {
     return name;
   }
 
-  /** Require that a Sorter provide a method for char[] arrays. */
+  /** Require that a Cipher provide a method for String[] arrays. */
   public abstract String[] cipher(String[] source);
 
 }
