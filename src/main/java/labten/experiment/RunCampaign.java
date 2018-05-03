@@ -14,7 +14,7 @@ import java.util.Random;
 public class RunCampaign implements Campaign {
 
   /** The starting size for running an experiment campaign. */
-  private static final int INPUT_SIZE_START = 250;
+  private static final int INPUT_SIZE_START = 1;
 
   /** The growth factor for input when running an experiment campaign. */
   private static final int INPUT_GROWTH_FACTOR = 2;
@@ -34,37 +34,27 @@ public class RunCampaign implements Campaign {
     for (int i = 0; i < size; i++) {
       sb.append(Inputs.charAt(random.nextInt(Inputs.length())));
     }
-
-
     return sb.toString();
   }
 
   /** Run the cipher in an experiment campaign. */
   public ResultsTable run(Cipher cipher) {
     int campaignRound = 0;
-    char currentInputSize = INPUT_SIZE_START;
+    int currentInputSize = INPUT_SIZE_START;
     ResultsTable results = new ResultsTable(CAMPAIGN_LENGTH);
-
     System.out.println("Starting a campaign of experiments with " + cipher.getName() + " ...");
     while (campaignRound < CAMPAIGN_LENGTH) {
       // TODO: Generate the input array of the required size
-
-
-
+      //String arraySize = generateRandomData(currentInputSize);
       long timeBefore = System.currentTimeMillis();
-      //cipher.cipher(arraySize);
+      //cipher.cipher(currentInputSize);
       long timeAfter = System.currentTimeMillis();
       long timeElapsed = timeAfter - timeBefore;
 
-      // Add the result to the instance of the ResultsTable
       results.addResult((long)currentInputSize, timeElapsed);
       System.out.println(IDENTATION + "Running round " + campaignRound
           + " with input size " + currentInputSize);
-
-      // Grow to the next size for the input
-      //  currentInputSize = currentInputSize * INPUT_GROWTH_FACTOR;
-
-      // Go to the next round of the experiment campaign
+      currentInputSize = currentInputSize * INPUT_GROWTH_FACTOR;
       campaignRound++;
     }
     System.out.println("... Finishing a campaign of experiments with " + cipher.getName());
