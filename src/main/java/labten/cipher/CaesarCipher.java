@@ -27,7 +27,9 @@ public class CaesarCipher extends Cipher {
     System.arraycopy(source, ARRAY_START, sorted, ARRAY_START, source.length);
     for (int i = 0; i < length; i++){
       //TODO: finished algorithm for CaesarCipher
-
+      int currentLetter = sorted[i];
+      int start = i;
+      
 
     }
     return source;
