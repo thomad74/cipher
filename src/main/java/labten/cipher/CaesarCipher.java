@@ -18,17 +18,8 @@ public class CaesarCipher extends Cipher {
    *
    *
    */
-  public String[] cipher(String[] source, int shift) {
-    StringBuffer result = new StringBuffer();
-    for (int i = 0; i < source.length(); i++) {
-      if (Character.isUpperCase(source.charAt(i))) {
-        char ch = (char)(((int)source.charAt(i) + shift - 65) % 26 + 65);
-        result.append(ch);
-      } else {
-        char ch = (char)(((int)source.charAt(i) + shift - 97) % 26 + 97);
-        result.append(ch);
-      }
-    }
+  public String[] cipher(String[] source) {
+
     return source;
   }
 
