@@ -1,7 +1,6 @@
 package labten.cipher;
 
-import java.io.*;
-import java.util.*;
+import java.util.Arrays;
 
 
 /**
@@ -32,15 +31,15 @@ public class CaesarCipher extends Cipher {
     int key = 1;
 
     System.arraycopy(source, ARRAY_START, sorted, ARRAY_START, source.length);
-        for (int i = 0; i < sorted.length; i++){
-          sorted[i] = sorted[i].toUpperCase();
-        }
-          //char[] plainTextChar = sorted.toCharArray();
-          String test = Arrays.toString(sorted);
-          char[] plainTextChar = test.toCharArray();
+    for (int i = 0; i < sorted.length; i++) {
+      sorted[i] = sorted[i].toUpperCase();
+    }
+    //char[] plainTextChar = sorted.toCharArray();
+    String test = Arrays.toString(sorted);
+    char[] plainTextChar = test.toCharArray();
 
 
-    for (int i = 0; i < length; i++){
+    for (int i = 0; i < length; i++) {
 
       plainTextChar[i] = (char)(((int)plainTextChar[i] + key - 65) % 26 + 65);
       System.out.println(String.valueOf(plainTextChar));
