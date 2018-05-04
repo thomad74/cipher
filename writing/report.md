@@ -43,7 +43,17 @@ least two rows, and that that table did not crash with two rows in it. This was
 achieved and implemented similarly to the second test case, by using the addResult
 and assertEquals methods, respectively. To make sure it did not crash, we needed
 to also add the assertTrue method like in the first test case, and make sure it
-did not equal null when we used the toString method for our table.
+did not equal null when we used the toString method for our table. We implemented
+tests to make sure the actual output from our algorithms was equal to the expected.
+To do this we used the assertEquals method. For the CaesarCipher, if the input was
+A and we had a shift of 1 then the output would be B. We did this for the first
+three letters of the alphabet to make sure the algorithm wasn't coincidentally
+correct. Another step we took was for the VigenereCipher. The test cases were
+more difficult for this because it involved the use of a key and the test cases
+are only correct if the Key String remains the same. We used a similar method to
+create this test suite, which was finding what we expected the output to be for
+the first three letters of the alphabet and set it equal to the actual. If true
+the test cases would pass and it would show us that our algorithms are correct.
 
 ## Evaluation
 To evaluate, we started with trial and error to see what needed to be changed
