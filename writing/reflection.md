@@ -60,10 +60,23 @@ fit everyone's schedule to work on the project together. This led to a large amo
 of individual work.
 
 ## Robert's Reflection
-The fourth paragraph will discuss the third team member's insights. This lab
-required me to explore the real-world applications of computer science. The fourth
-paragraph will discuss the third team member's insights. This lab required me to
-explore the real-world applications of computer science.
+The final project was very tricky as we had to build the program from the ground
+up. We were luckily able to take a look at previous assignments to help us
+implement code and think of some test suites we may want to use for our final
+program. While building the program we had to figure out the best data type to
+store the values as and ultimately decided to use a `char[] Array` because it
+would allow us to feed the program a string of characters and we would have
+access to these characters at anytime. However, the draw back of this idea is
+that it would make our program Big O(n), which isn't bad, but it isn't the
+fastest time possible. Unfortunately the algorithm proved trickier than expected
+and would build sometimes but not run correctly or if we fixed a bug it would
+cause another method in a different class to have a bug, turning it into a game
+of cat and mouse. The program is close to completion, however, something just
+isn't clicking within the program and my group mates and I aren't sure what the
+problem is. However, through this project my group learned about different types
+of methods in java because we tried to implement many of them, which in the long
+run should prove useful.
+
 
 ## Jordan's Reflection
 This lab had it's difficulties. It was hard to implement the cipher in our
