@@ -37,11 +37,11 @@ public class TestCaesarCipher {
     return true;
   }
 
-  // @Test
-  // public void TestCaesarCipherA() {
-  //   assertEquals(caesarCipher.cipher("a"), "b");
-  //
-  // }
+  @Test
+  public void TestCaesarCipherAs() {
+    assertEquals(caesarCipher.cipher("a"), "b");
+
+  }
   // @Test
   // public void TestCaesarCipherB() {
   //   assertEquals(caesarCipher.cipher("b"), "c");
