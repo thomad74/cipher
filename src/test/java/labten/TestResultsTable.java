@@ -42,4 +42,12 @@ public class TestResultsTable {
     long[][] expected = { {250L, 652L, 0L}, {0, 0, 0} };
     assertArrayEquals(table.getResultsTable(), expected);
   }
+
+  @Test
+  public void testResultsTableToStringDoesNotCrashWithTwoRows() {
+    ResultsTable table = new ResultsTable(2);
+    table.addResult(250L, 652L);
+    assertEquals(table.getRowCount(), 1);
+    assertTrue(table.toString() != null);
+  }
 }
