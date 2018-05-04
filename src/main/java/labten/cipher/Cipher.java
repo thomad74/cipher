@@ -1,9 +1,9 @@
 package labten.cipher;
 
 /**
- * An abstract class for all of the sorting implementations.
+ * An abstract class for all of the cipher implementations.
  *
- * @author
+ * @author Ben Watto and Dillon Thoma
  */
 
 public abstract class Cipher {
@@ -11,15 +11,15 @@ public abstract class Cipher {
   /** The name of the Cipher. */
   protected String name;
 
-  /** The default name of the sorter. */
+  /** The default name of the cipher. */
   private static final String DEFAULT_CIPHER = "default";
 
-  /** Configure the name of the sorter. */
+  /** Configure the name of the cipher. */
   public Cipher() {
     name = DEFAULT_CIPHER;
   }
 
-  /** The name of the sorter. */
+  /** The name of the cipher. */
   public String getName() {
     return name;
   }
