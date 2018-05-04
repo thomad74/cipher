@@ -57,5 +57,4 @@ public class RunCampaign implements Campaign {
     System.out.println("... Finishing a campaign of experiments with " + cipher.getName());
     return results;
   }
-
 }
