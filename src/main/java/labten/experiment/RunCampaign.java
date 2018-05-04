@@ -44,20 +44,10 @@ public class RunCampaign implements Campaign {
     ResultsTable results = new ResultsTable(CAMPAIGN_LENGTH);
     System.out.println("Starting a campaign of experiments with " + cipher.getName() + " ...");
     while (campaignRound < CAMPAIGN_LENGTH) {
-      // TODO: Generate the input array of the required size
-      //String arraySize = generateRandomData(currentInputSize);
       long timeBefore = System.currentTimeMillis();
-      //int currentInputSize = 1;
-      String str = Integer.toString(currentInputSize);
-      //String str[] = new String [currentInputSize.length];
-      //for (int i = 0; i < currentInputSize.length; i++);
-      //strArray[i] = String.valueOf(intArray[i]);
-      //System.out.println(Array.toString(strArray));
-      // TODO: FIGURE OUT WHY THIS LINE BELOW ISNT WORKING!
-      //cipher.cipher(currentInputSize);
+      cipher.cipher(Inputs);
       long timeAfter = System.currentTimeMillis();
       long timeElapsed = timeAfter - timeBefore;
-
       results.addResult((long)currentInputSize, timeElapsed);
       System.out.println(IDENTATION + "Running round " + campaignRound
           + " with input size " + currentInputSize);
