@@ -33,4 +33,13 @@ public class TestResultsTable {
     long[][] expected = { {250L, 38L, 0L}, {500L, 122L, 3L}, {1000L, 533L, 4L} };
     assertArrayEquals(table.getResultsTable(), expected);
   }
+
+  @Test
+  public void testResultsTableContainsTwoRows() {
+    ResultsTable table = new ResultsTable(2);
+    table.addResult(250L, 652L);
+    assertEquals(table.getRowCount(), 1);
+    long[][] expected = { {250L, 652L, 0L}, {0, 0, 0} };
+    assertArrayEquals(table.getResultsTable(), expected);
+  }
 }
