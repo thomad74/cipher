@@ -40,14 +40,20 @@ public class RunCampaign implements Campaign {
   /** Run the cipher in an experiment campaign. */
   public ResultsTable run(Cipher cipher) {
     int campaignRound = 0;
-    String currentInputSize = INPUT_SIZE_START;
+    //int currentInputSize = INPUT_SIZE_START;
     ResultsTable results = new ResultsTable(CAMPAIGN_LENGTH);
     System.out.println("Starting a campaign of experiments with " + cipher.getName() + " ...");
     while (campaignRound < CAMPAIGN_LENGTH) {
       // TODO: Generate the input array of the required size
       //String arraySize = generateRandomData(currentInputSize);
       long timeBefore = System.currentTimeMillis();
-      cipher.cipher(currentInputSize);
+      int currentInputSize = 1;
+      String str = Integer.toString(currentInputSize);
+      //String str[] = new String [currentInputSize.length];
+      //for (int i = 0; i < currentInputSize.length; i++);
+      //  strArray[i] = String.valueOf(intArray[i]);
+      //System.out.println(Array.toString(strArray));
+      //cipher.cipher(currentInputSize);
       long timeAfter = System.currentTimeMillis();
       long timeElapsed = timeAfter - timeBefore;
 
