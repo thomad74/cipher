@@ -1,11 +1,14 @@
 package labten;
 
-// import org.junit.Assert.assertArrayEquals;
-// import org.junit.Assert.assertEquals;
-// import org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import labten.cipher.CaesarCipher;
-// import org.junit.test;
+import org.junit.Test;
+
+import java.util.Arrays;
+import java.util.Random;
 
 public class TestCaesarCipher {
 
@@ -21,9 +24,19 @@ public class TestCaesarCipher {
   /** The starting character. */
   private static char STARTING_CHARACTER = 'a';
 
-  // @Test
-  //   public void cipherCanEncode() {
-  //     String message = encryptedMsg.getKey().substring(0, 10);
-  //     assertEquals(message, encryptedMsg.encode("aaaaaaaaaa"));
-  //   }
+  /** A method to determine if an array is isSorted. */
+  private boolean isSorted(char[] array) {
+    for (int i = 0; i < array.length - 1; i++) {
+      if (array[i] > array[i + 1]) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  @Test
+    public void testCaesarCipher() {
+      // String message = encryptedMsg.getKey().substring(0, 10);
+      // assertEquals(message, encryptedMsg.encode("aaaaaaaaaa"));
+  }
 }

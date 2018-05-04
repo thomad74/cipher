@@ -34,7 +34,7 @@ public class VigenereCipher extends Cipher {
 
   /** Demonstrate the use of the BubbleSort algorithm. */
   public static void main(String[] args) {
-    String[] letters = {"fortnite sux"};
+    String[] letters = {"fortnitesux"};
     System.out.println("Before: " + java.util.Arrays.toString(letters));
     String[] sortedLetters = (new VigenereCipher()).cipher(letters);
     System.out.println("After : " + java.util.Arrays.toString(sortedLetters));

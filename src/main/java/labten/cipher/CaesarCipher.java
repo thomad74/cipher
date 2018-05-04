@@ -1,5 +1,8 @@
 package labten.cipher;
 
+import java.util.Arrays;
+
+
 /**
  * An implementation of the Caesar algorithm.
  *
@@ -24,12 +27,13 @@ public class CaesarCipher extends Cipher {
   public String[] cipher(String[] source) {
     int length = source.length;
     String[] sorted = new String[source.length];
+
+    int key = 1;
+    // Makes a copy of the source array list
     System.arraycopy(source, ARRAY_START, sorted, ARRAY_START, source.length);
-    for (int i = 0; i < length; i++){
-      //TODO: finished algorithm for CaesarCipher
-      int currentLetter = sorted[i];
-      int start = i;
-      
+    // iterates through the sorted array list and changes all the characters to upper case
+    for (int i = 0; i < sorted.length; i++) {
+
 
     }
     return source;
