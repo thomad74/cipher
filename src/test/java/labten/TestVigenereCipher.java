@@ -17,6 +17,9 @@ import java.util.Random;
 
 public class TestVigenereCipher {
 
+  /** Create the object to be used in all of the test suites. */
+  VigenereCipher vigenereCipher = new VigenereCipher();
+
   /** The maximum number of items to use for testing. */
   private static int MAXIMUM_NUMBER_ITEMS = 100;
 
