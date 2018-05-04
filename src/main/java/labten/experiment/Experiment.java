@@ -24,7 +24,7 @@ public class Experiment {
     String[] sortedLetters = (new CaesarCipher()).cipher(letters);
     System.out.println("After : " + java.util.Arrays.toString(sortedLetters));
     System.out.println();
-  /** Demonstrate the use of the Vigenere algorithm. */
+    /** Demonstrate the use of the Vigenere algorithm. */
     String[] moreLetters = {"fortnitesux"};
     System.out.println("Before: " + java.util.Arrays.toString(moreLetters));
     String[] moreSortedLetters = (new VigenereCipher()).cipher(moreLetters);
