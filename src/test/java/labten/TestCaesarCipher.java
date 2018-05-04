@@ -36,19 +36,19 @@ public class TestCaesarCipher {
     }
     return true;
   }
-  
-  @Test
-  public void TestCaesarCipherA() {
-    assertEquals(caesarCipher.cipher("a"), "b");
 
-  }
-  @Test
-  public void TestCaesarCipherB() {
-    assertEquals(caesarCipher.cipher("b"), "c");
-  }
-  @Test
-  public void TestCaesarCipherC() {
-    assertEquals(caesarCipher.cipher("c"), "d");
-  }
+  // @Test
+  // public void TestCaesarCipherA() {
+  //   assertEquals(caesarCipher.cipher("a"), "b");
+  //
+  // }
+  // @Test
+  // public void TestCaesarCipherB() {
+  //   assertEquals(caesarCipher.cipher("b"), "c");
+  // }
+  // @Test
+  // public void TestCaesarCipherC() {
+  //   assertEquals(caesarCipher.cipher("c"), "d");
+  // }
 
 }
