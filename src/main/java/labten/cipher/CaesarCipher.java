@@ -1,6 +1,7 @@
 package labten.cipher;
 
 import java.util.Arrays;
+import labten.experiment.Experiment;
 
 
 /**
@@ -28,26 +29,26 @@ public class CaesarCipher extends Cipher {
 
 
 
-  String msg = "hello";
-  char shift = 3;
-
-  String cipher(String msg, int shift) {
-    String size = "";
-    int len = msg.length();
-    for (int x = 0; x < len; x++) {
-
-      char start = (char)(msg.charAt(x) + shift);
-      if (start > 'z') {
-
-        size += (char)(msg.charAt(x) - (26 - shift));
-      } else {
-        size += (char)(msg.charAt(x) + shift);
-      }
-    }
-    return size;
-
-
-  }
+  // String msg = "hello";
+  // char shift = 3;
+  //
+  // String cipher(String msg, int shift) {
+  //   String size = "";
+  //   int len = msg.length();
+  //   for (int x = 0; x < len; x++) {
+  //
+  //     char start = (char)(msg.charAt(x) + shift);
+  //     if (start > 'z') {
+  //
+  //       size += (char)(msg.charAt(x) - (26 - shift));
+  //     } else {
+  //       size += (char)(msg.charAt(x) + shift);
+  //     }
+  //   }
+  //   return size;
+  //
+  //
+  // }
 
   /**
     * TODO:An implementation of the Caesar algorithm.
@@ -67,14 +68,5 @@ public class CaesarCipher extends Cipher {
 
     }
     return source;
-  }
-
-  /** Demonstrate the use of the Caesar algorithm. */
-  public void main(String[] args) {
-    System.out.println(cipher("abc", 1));
-    String[] letters = {"fortniterulez"};
-    System.out.println("Before: " + java.util.Arrays.toString(letters));
-    String[] sortedLetters = (new CaesarCipher()).cipher(letters);
-    System.out.println("After : " + java.util.Arrays.toString(sortedLetters));
   }
 }
