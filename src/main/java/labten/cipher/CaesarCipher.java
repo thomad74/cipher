@@ -21,52 +21,23 @@ public class CaesarCipher extends Cipher {
   }
 
   /**
-   * TODO:An implementation of the Caesar algorithm.
-   *
-   *
-   */
-
-
-
-
-  // String msg = "hello";
-  // char shift = 3;
-  //
-  // String cipher(String msg, int shift) {
-  //   String size = "";
-  //   int len = msg.length();
-  //   for (int x = 0; x < len; x++) {
-  //
-  //     char start = (char)(msg.charAt(x) + shift);
-  //     if (start > 'z') {
-  //
-  //       size += (char)(msg.charAt(x) - (26 - shift));
-  //     } else {
-  //       size += (char)(msg.charAt(x) + shift);
-  //     }
-  //   }
-  //   return size;
-  //
-  //
-  // }
+    * JavaDoc Comment.
+    */
+  public static final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 
   /**
-    * TODO:An implementation of the Caesar algorithm.
-    *
-    *
+    * JavaDoc Comment.
     */
-
   public String cipher(String source) {
-    //int length = source.length;
-    //String[] sorted = new String[source.length];
-
-    int key = 1;
-    // Makes a copy of the source array list
-    //System.arraycopy(source, ARRAY_START, sorted, ARRAY_START, source.length);
-    // iterates through the sorted array list and changes all the characters to upper case
-    // for (int i = 0; i < sorted.length; i++) {
-    // 
-    // }
-    return source;
+    int shiftKey = 1;
+    source = source.toLowerCase();
+    String cipherText = "";
+    for (int i = 0; i < source.length(); i++) {
+      int charPosition = ALPHABET.indexOf(source.charAt(i));
+      int keyVal = (shiftKey + charPosition) % 26;
+      char replaceVal = ALPHABET.charAt(keyVal);
+      cipherText += replaceVal;
+    }
+    return cipherText;
   }
 }
