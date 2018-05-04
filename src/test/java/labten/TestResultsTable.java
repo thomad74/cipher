@@ -22,4 +22,15 @@ public class TestResultsTable {
     long[][] results = table.getResultsTable();
     assertTrue(results != null);
   }
+
+  @Test
+  public void testResultsTableContainsRatio() {
+    ResultsTable table = new ResultsTable(3);
+    table.addResult(250L, 38L);
+    table.addResult(500L, 122L);
+    table.addResult(1000L, 533L);
+    assertEquals(table.getRowCount(), 3);
+    long[][] expected = { {250L, 38L, 0L}, {500L, 122L, 3L}, {1000L, 533L, 4L} };
+    assertArrayEquals(table.getResultsTable(), expected);
+  }
 }
