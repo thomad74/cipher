@@ -10,7 +10,7 @@ import labten.data.ResultsTable;
  * Note that this supports running campaigns of experiments for a
  * different number of rounds depending on the strategy.
  *
- * @author Jordan Wilson, Ben Watto, Robert Samuel, and Dillon Thoma
+ * @author Dillon Thoma and Ben Watto
  */
 
 public class Experiment {
@@ -18,20 +18,21 @@ public class Experiment {
   /** Run the ciphering experiment. */
   /** Demonstrate the use of the Caesar algorithm. */
   public static void main(String[] args) {
-    String letters = "bosco likes to eat food from alex";
+    String letters = "Doctor Kapfhammer loves Computer Science.";
     System.out.println("Before: " + letters);
     String sortedLetters = (new CaesarCipher()).cipher(letters);
     System.out.println("After : " + sortedLetters);
     System.out.println();
+
     /** Demonstrate the use of the Vigenere algorithm. */
-    String moreLetters = "abcdefghijklmnopqrstuvwxyz";
+    String moreLetters = "And we love Computer Science, too!";
     System.out.println("Before: " + moreLetters);
     String moreSortedLetters = (new VigenereCipher()).cipher(moreLetters);
     System.out.println("After : " + moreSortedLetters);
     System.out.println();
     RunCampaign runCipherCampaign = new RunCampaign();
 
-    // Create a Caesar cipher and run it in a campaign
+    /** Create a Caesar cipher and run it in a campaign. */
     CaesarCipher caesarCipher = new CaesarCipher();
     ResultsTable caesarCipherResultsTable = runCipherCampaign.run(caesarCipher);
     System.out.println();
@@ -39,7 +40,7 @@ public class Experiment {
     System.out.println(caesarCipherResultsTable.toString());
     System.out.println();
 
-    // Create a Vigenere Cipher and run it in a campaign
+    /**  Create a Vigenere Cipher and run it in a campaign. */
     VigenereCipher vigenereCipher = new VigenereCipher();
     ResultsTable vigenereCipherResultsTable =
         runCipherCampaign.run(vigenereCipher);
