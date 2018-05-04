@@ -24,7 +24,27 @@ public class CaesarCipher extends Cipher {
    *
    *
    */
-  public String[] cipher(String[] source) {
+
+
+
+
+   String msg = "hello";
+   char shift = 3;
+
+   String cipher(String msg, int shift){
+     String s = "";
+     int len = msg.length();
+     for(int x = 0; x < len; x++){
+         char c = (char)(msg.charAt(x) + shift);
+         if (c > 'z')
+             s += (char)(msg.charAt(x) - (26-shift));
+         else
+             s += (char)(msg.charAt(x) + shift);
+     }
+     return s;
+
+
+ }public String[] cipher(String[] source) {
     int length = source.length;
     String[] sorted = new String[source.length];
 
@@ -33,19 +53,19 @@ public class CaesarCipher extends Cipher {
     System.arraycopy(source, ARRAY_START, sorted, ARRAY_START, source.length);
 // iterates through the sorted array list and changes all the characters to upper case
     for (int i = 0; i < sorted.length; i++) {
-      sorted[i] = sorted[i].toUpperCase();
-    }
+      //sorted[i] = sorted[i].toUpperCase();
+    //}
 
     //char[] plainTextChar = sorted.toCharArray();
-    String[] test = new String[Arrays.toString(sorted)];
+    //String[] test = new String[Arrays.toString(sorted)];
     //String test = Arrays.toString(sorted);
-    char[] plainTextChar = test.toCharArray();
+    //char[] plainTextChar = test.toCharArray();
 
 
-    for (int i = 0; i < length; i++) {
+    //for (int i = 0; i < length; i++) {
 
-      plainTextChar[i] = (char)(((int)plainTextChar[i] + key - 65) % 26 + 65);
-      System.out.println(String.valueOf(plainTextChar));
+      //plainTextChar[i] = (char)(((int)plainTextChar[i] + key - 65) % 26 + 65);
+      //System.out.println(String.valueOf(plainTextChar));
 
 
 
