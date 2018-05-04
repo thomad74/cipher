@@ -35,8 +35,16 @@ public class TestCaesarCipher {
   }
 
   @Test
-    public void testCaesarCipher() {
-      // String message = encryptedMsg.getKey().substring(0, 10);
-      // assertEquals(message, encryptedMsg.encode("aaaaaaaaaa"));
+  public void TestCaesarCipherA() {
+    assertEquals(caesarCipher.cipher("a"), "b");
+
   }
+  @Test
+  public void TestCaesarCipherB() {
+    assertEquals(caesarCipher.cipher("b"), "c");
+  }
+  @Test
+  public void TestCaesarCipherC() {
+    assertEquals(caesarCipher.cipher("c"), "d");
+
 }
