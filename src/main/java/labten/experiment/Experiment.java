@@ -18,13 +18,13 @@ public class Experiment {
   /** Run the ciphering experiment. */
   /** Demonstrate the use of the Caesar algorithm. */
   public static void main(String[] args) {
-    String letters = "fortniterulez";
+    String letters = "bosco likes to eat food from alex";
     System.out.println("Before: " + letters);
     String sortedLetters = (new CaesarCipher()).cipher(letters);
     System.out.println("After : " + sortedLetters);
     System.out.println();
     /** Demonstrate the use of the Vigenere algorithm. */
-    String moreLetters = "fortnitesux";
+    String moreLetters = "abcdefghijklmnopqrstuvwxyz";
     System.out.println("Before: " + moreLetters);
     String moreSortedLetters = (new VigenereCipher()).cipher(moreLetters);
     System.out.println("After : " + moreSortedLetters);
