@@ -62,4 +62,19 @@ the test cases would pass and it would show us that our algorithms are correct.
 
 ## Evaluation
 To evaluate, we started with trial and error to see what needed to be changed
-for each algorithm.
+for each algorithm. We also tried implementing numerous different algorithms
+for each ciphering experiment, and ultimately ended up with what we have now,
+feeling certain that they were the best ones for our project. In order to evaluate
+our programs effectiveness, we created JUnit test suites for each file that
+contained JUnit test cases to prove that our program was working correctly.
+Additionally, we created a doubling experiment using a results table to evaluate
+the efficiency of our experiments, and compared the result. For the algorithms,
+we decided to try and implement some test cases before finishing the algorithm,
+and work backwards to try and make the tests pass, which was very helpful in the
+implementation of our final algorithms. Also, we used a StringBuilder to create
+a random array from RunCampaign that was used to measure efficiency as well. This
+was used by putting all possible inputs in a static final string, and added them
+in random indexes to encrypt randomly. This helped us evaluate how our program
+was working, and see what would happen to the output as we changed the input.
+Overall, when evaluating our project, we feel that it does what it is supposed to
+do, and is efficient and effective in doing so.
