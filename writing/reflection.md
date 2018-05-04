@@ -11,13 +11,24 @@ program was function correctly, we used the gradle build, gradle test, and gradl
 run commands. Gradle build would inform us if there were any initial issues with
 compiling our program. Gradle test was used to see if the actual output was equal
 to what we expected. Gradle run also allowed us to visualize what was being output
-by our program. 
+by our program.
 
 ## Dillon's Reflection
 The second paragraph will discuss the first team member's insights.
 
 ## Ben's Reflection
-The third paragraph will discuss the second team member's insights.
+This lab required us to use what we learned in previous labs and apply it to a
+new project. We had to design and implement the entire project using our own ideas.
+We were able to base most of the lab on previous, but there were many challenges.
+Luckily, we used the GitHub tools to create issues for the areas we were struggling
+with. This allowed us to keep track of the issues and monitor their status. I also
+added TODOs in the areas where I had issues with the program. This allowed my
+teammates to see where I thought the source of the problem was originating from.
+Another challenge is this lab was that we had very limited access to TAs and
+Professor Kapfhammer because the majority of the time we worked on it was during
+Finals Week. This made the lab more challenging, but it also made our group need
+to think more about the problems and attempt to find a creative solution to get
+it to work successfully.
 
 ## Robert's Reflection
 The fourth paragraph will discuss the third team member's insights.
