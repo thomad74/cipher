@@ -28,7 +28,10 @@ Another challenge is this lab was that we had very limited access to TAs and
 Professor Kapfhammer because the majority of the time we worked on it was during
 Finals Week. This made the lab more challenging, but it also made our group need
 to think more about the problems and attempt to find a creative solution to get
-it to work successfully.
+it to work successfully. Another challenge for this lab was allowing everyone to
+meet and work together on this lab. We had a difficult time finding times that
+fit everyone's schedule to work on the project together. This led to a large amount
+of individual work.
 
 ## Robert's Reflection
 The fourth paragraph will discuss the third team member's insights.
