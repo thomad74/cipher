@@ -25,7 +25,7 @@ public class CaesarCipher extends Cipher {
     * the output that is produced in the terminal window.
     */
 
-  public static final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  public static final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 
   /** This algorithm performs the CaesarCipher. It uses a shift of 1 to change
     * the position. It uses the index of each location to select the new positon.
