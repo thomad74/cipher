@@ -20,14 +20,15 @@ public class CaesarCipher extends Cipher {
     name = "CaesarCipher";
   }
 
-  /**
-    * JavaDoc Comment.
+  /** This final string ALPHABET contains all the options for CaesarCipher.
+    * It is needed to allow the shift to move to the next letter. This provides
+    * the output that is produced in the terminal window.
     */
-    
-  public static final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 
-  /**
-    * JavaDoc Comment.
+  public static final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+  /** This algorithm performs the CaesarCipher. It uses a shift of 1 to change
+    * the position. It uses the index of each location to select the new positon.
     */
 
   public String cipher(String source) {
