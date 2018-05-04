@@ -29,44 +29,11 @@ public class CaesarCipher extends Cipher {
     String[] sorted = new String[source.length];
 
     int key = 1;
-// Makes a copy of the source array list
+    // Makes a copy of the source array list
     System.arraycopy(source, ARRAY_START, sorted, ARRAY_START, source.length);
-// iterates through the sorted array list and changes all the characters to upper case
+    // iterates through the sorted array list and changes all the characters to upper case
     for (int i = 0; i < sorted.length; i++) {
-      sorted[i] = sorted[i].toUpperCase();
-    }
 
-    //char[] plainTextChar = sorted.toCharArray();
-    String[] test = new String[Arrays.toString(sorted)];
-    //String test = Arrays.toString(sorted);
-    char[] plainTextChar = test.toCharArray();
-
-
-    for (int i = 0; i < length; i++) {
-
-      plainTextChar[i] = (char)(((int)plainTextChar[i] + key - 65) % 26 + 65);
-      System.out.println(String.valueOf(plainTextChar));
-
-
-
-
-
-
-
-      //TODO: finished algorithm for CaesarCipher
-      //int currentLetter = sorted[i];
-      //int start = i;
-
-      // StringBuffer result = new StringBuffer();
-      // if (Character.isUpperCase(sorted.charAt(i))){
-      //   char ch = (char)(((int)sorted.charAt(i) + shift - 65) % 26 + 65);
-      //   result.append(ch);
-      // } else {
-      //   char ch = (char)(((int)sorted.charAt(i) + shift - 97) % 26 + 97);
-      //   result.append(ch);
-      // }
-
-      //sorted = sorted.toUpperCase();
 
     }
     return source;
