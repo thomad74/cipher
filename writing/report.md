@@ -30,9 +30,9 @@ variables error. Overall, we implemented many different things and tried a lot o
 different algorithms, and ultimately ended up with two different types of cipher.
 
 ##Testing
-Please follow the instructions in the assignment sheet as you write the final
-report for this project.
+We implemented JUnit test suites for ResultsTable, CaesarCipher, and VigenereCipher,
+respectively.
 
 ## Evaluation
-Please follow the instructions in the assignment sheet as you write the final
-report for this project.
+To evaluate, we started with trial and error to see what needed to be changed
+for each algorithm.
