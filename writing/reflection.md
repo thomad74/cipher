@@ -2,19 +2,45 @@
 
 ## Group Reflection
 This lab required us to explore the real-world applications of computer science.
+We were required to create two different types of cipher, Caesar and Vigenere,
+and compare and contrast them using implementations and evaluations. It was
+interesting to see the messages we would use be encrypted different ways, and
+see the secret message that it would be changed to. There were many different
+options for this project, but our group decided upon this one because we felt
+it would be the most interesting, as well as challenge us to learn something.
 During this project, we learned a lot about the real world application of Computer
 Science. Throughout the lab we had many issues involving converting one type of
 data to another, to solve this issue we had to change them all to one type to
 avoid the errors. We also had to try and implement many different algorithms
 before we created one that successful encrypted our messages. To ensure our
-program was function correctly, we used the gradle build, gradle test, and gradle
-run commands. Gradle build would inform us if there were any initial issues with
-compiling our program. Gradle test was used to see if the actual output was equal
-to what we expected. Gradle run also allowed us to visualize what was being output
-by our program.
+program was functioning correctly, we used the gradle build, gradle test, and
+gradle run commands. Gradle build would inform us if there were any initial
+issues with compiling our program. Gradle test was used to see if the actual
+output was equal to what we expected. Gradle run also allowed us to visualize
+what was being output by our program.
 
 ## Dillon's Reflection
-The second paragraph will discuss the first team member's insights.
+This final project was challenging in the sense that we needed to start from
+scratch to create a program. We spent a large amount of time on this project
+just setting up the basics such as the folders, files, and initialization items
+such as public class, packages, and more. Once this was completed, we needed to
+research algorithms that did what we needed them to do, which was ciphering. The
+research required us to explore many different options of the ciphering, and
+took us longer to figure out which one would be best for our case. Additionally,
+we had trouble with having multiple main methods in our code. In order to fix this,
+we realized that we had to put them all into one file, the Experiment.java file,
+and edit the build.gradle settings for our project to ensure the main method was
+found and ran correctly based on its new location. Other challenges included
+many checkstyle errors, missing brackets, and many other tedious tasks that were
+simple yet hard to find. Overall, this final project was more challenging than
+last semester, and I feel that is because we had a larger group. It was more
+challenging to get everyone together to work on it at the same time, which
+resulted in individuals doing large amounts of work alone, or not with the whole
+team. A positive from this, however, is that we were able to figure stuff out on
+our own, and as a group. We also used the issues tab in GitHub to inform people
+who were not in the lab what we had done, and what we had to do still. This was
+beneficial to communicating with the whole team, and making sure everyone was on
+the same page, even if we were not all together.
 
 ## Ben's Reflection
 This lab required us to use what we learned in previous labs and apply it to a
