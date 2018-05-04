@@ -33,7 +33,7 @@ public class TestCaesarCipher {
     }
     return true;
   }
-
+  
   @Test
   public void TestCaesarCipherA() {
     assertEquals(caesarCipher.cipher("a"), "b");
