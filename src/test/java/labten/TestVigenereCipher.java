@@ -12,25 +12,13 @@ import java.util.Random;
 /**
  * A JUnit test suite for the VigenereCipher.
  *
- * @author
+ * @author Ben Watto and Dillon Thoma
  */
 
 public class TestVigenereCipher {
 
   /** Create the object to be used in all of the test suites. */
   VigenereCipher vigenereCipher = new VigenereCipher();
-
-  /** The maximum number of items to use for testing. */
-  private static int MAXIMUM_NUMBER_ITEMS = 100;
-
-  /** The maximum number of items to use for testing. */
-  private static int MAXIMUM_NUMBER_CHARS = 43;
-
-  /** The size of the alphabet for character generation. */
-  private static int ALPHABET_SIZE = 26;
-
-  /** The starting character. */
-  private static char STARTING_CHARACTER = 'a';
 
   @Test
   public void testVigenereCipherA() {
@@ -41,7 +29,7 @@ public class TestVigenereCipher {
   public void testVigenereCipherB() {
     assertEquals(vigenereCipher.cipher("b"), "M");
   }
-  
+
   @Test
   public void testVigenereCipherC() {
     assertEquals(vigenereCipher.cipher("c"), "N");
