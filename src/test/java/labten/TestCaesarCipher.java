@@ -12,6 +12,9 @@ import java.util.Random;
 
 public class TestCaesarCipher {
 
+  /** Create the object to be used in all of the test suites. */
+  CaesarCipher caesarCipher = new CaesarCipher();
+
   /** The maximum number of items to use for testing. */
   private static int MAXIMUM_NUMBER_ITEMS = 100;
 
