@@ -34,4 +34,13 @@ it to work successfully.
 The fourth paragraph will discuss the third team member's insights.
 
 ## Jordan's Reflection
-If needed, the fifth paragraph will discuss the fourth team member's insights.
+This lab had it's difficulties. It was hard to implement the cipher in our
+program because the input for our size was an integer and we were trying to
+convert to a string. It was interesting in an topic though because we were able
+to figure out how encrypting and decrypting works. The algorithms that we used
+for our program were implemented with using simple for loops which I thought
+was pretty cool. Overall, this lab challenged us because we took a concept that
+we knew a little about but expanded on them. We were able to use time
+complexities that we learned from previous labs showed how the two different
+ciphers work and how their times differed from each other. I believe I have
+learned useful information that I can go on and expand on.    
