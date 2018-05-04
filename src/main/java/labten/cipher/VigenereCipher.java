@@ -3,7 +3,7 @@ package labten.cipher;
 /**
  * An implementation of the Vigenere algorithm.
  *
- * @author
+ * @author Dillon Thoma and Ben Watto
  */
 
 public class VigenereCipher extends Cipher {
@@ -19,6 +19,7 @@ public class VigenereCipher extends Cipher {
   /**
     * JavaDoc Comment.
     */
+
   public String cipher(String source) {
     String key = "fortnite";
     String res = "";
@@ -34,15 +35,3 @@ public class VigenereCipher extends Cipher {
     return res;
   }
 }
-      // public String decrypt(String source, final String key) {
-      //   String res = "";
-      //   source = source.toUpperCase();
-      //   for (int i = 0, j = 0; i < text.length(); i++) {
-      //     char c = text.charAt(i);
-      //     if (c < 'A' || c > 'Z')
-      //       continue;
-      //       res += (char) ((c - key.charAt(j) + 26) % 26 + 'A');
-      //       j = ++j % key.length();
-      //   }
-      //     return res;
-      // }
