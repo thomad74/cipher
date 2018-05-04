@@ -46,5 +46,6 @@ public class TestCaesarCipher {
   @Test
   public void TestCaesarCipherC() {
     assertEquals(caesarCipher.cipher("c"), "d");
+  }
 
 }

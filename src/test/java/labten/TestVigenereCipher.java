@@ -36,4 +36,5 @@ public class TestVigenereCipher {
   @Test
   public void TestVigenereCipherB() {
     assertEquals(vigenereCipher.cipher("b"), "c");
+  }
 }
