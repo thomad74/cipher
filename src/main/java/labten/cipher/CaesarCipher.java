@@ -7,7 +7,7 @@ import java.util.Arrays;
 /**
  * An implementation of the Caesar algorithm.
  *
- * @author
+ * @author Dillon Thoma, Ben Watto
  */
 
 public class CaesarCipher extends Cipher {
@@ -23,11 +23,13 @@ public class CaesarCipher extends Cipher {
   /**
     * JavaDoc Comment.
     */
+    
   public static final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 
   /**
     * JavaDoc Comment.
     */
+
   public String cipher(String source) {
     int shiftKey = 1;
     source = source.toLowerCase();
