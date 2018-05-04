@@ -31,7 +31,19 @@ different algorithms, and ultimately ended up with two different types of cipher
 
 ##Testing
 We implemented JUnit test suites for ResultsTable, CaesarCipher, and VigenereCipher,
-respectively.
+respectively. For the test cases in ResultsTable, we implemented four different
+tests that would make sure it was working properly. The first was to ensure that
+the ResultsTable was not empty, or null. This involved the assertTrue method to
+prove that the ResultsTable did not equal (!=) null. Second, we implemented a test
+case that shows that our ResultsTable contains a ratio in it. We did this by
+using the addResult method to add the results of the experiment to the table, and
+the assertEquals method to make sure the table was the same as what it was expected
+to be. The third and fourth test cases made sure that the ResultsTable had at
+least two rows, and that that table did not crash with two rows in it. This was
+achieved and implemented similarly to the second test case, by using the addResult
+and assertEquals methods, respectively. To make sure it did not crash, we needed
+to also add the assertTrue method like in the first test case, and make sure it
+did not equal null when we used the toString method for our table.
 
 ## Evaluation
 To evaluate, we started with trial and error to see what needed to be changed
