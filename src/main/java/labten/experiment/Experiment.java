@@ -18,16 +18,15 @@ public class Experiment {
   /** Run the ciphering experiment. */
   /** Demonstrate the use of the Caesar algorithm. */
   public static void main(String[] args) {
-    //System.out.println(cipher("abc", 1));
-    //String[] letters = {"fortniterulez"};
+    String letters = "fortniterulez";
     //System.out.println("Before: " + java.util.Arrays.toString(letters));
-    //String[] sortedLetters = (new CaesarCipher()).cipher(letters);
-    //System.out.println("After : " + java.util.Arrays.toString(sortedLetters));
+    String sortedLetters = (new CaesarCipher()).cipher(letters);
+    System.out.println("After : " + sortedLetters);
     System.out.println();
     /** Demonstrate the use of the Vigenere algorithm. */
-    //String[] moreLetters = {"fortnitesux"};
+    String moreLetters = "fortnitesux";
     //System.out.println("Before: " + java.util.Arrays.toString(moreLetters));
-    //String[] moreSortedLetters = (new VigenereCipher()).cipher(moreLetters);
+    String moreSortedLetters = (new VigenereCipher()).cipher(moreLetters);
     //System.out.println("After : " + java.util.Arrays.toString(moreSortedLetters));
     System.out.println();
     RunCampaign runCipherCampaign = new RunCampaign();
