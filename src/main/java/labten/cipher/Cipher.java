@@ -25,6 +25,6 @@ public abstract class Cipher {
   }
 
   /** Require that a Cipher provide a method for String[] arrays. */
-  public abstract String[] cipher(String[] source);
+  public abstract String cipher(String source);
 
 }
