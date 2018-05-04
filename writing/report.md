@@ -7,7 +7,12 @@ different forms of cryptography. The first was a form of Caesar Cipher, which
 shifts each letter by an amount given by the key. The second type was a Vigenere
 cipher, which uses a word as a key to determine the shift. We used similar set
 ups as previous labs, but we altered it for strings. Following this we added
-algorithms to perform these functions on a string.
+algorithms to perform these functions on a string. We designed this program to
+be able to cipher through a string two different ways, and compare the results
+later in the experiment. The two different cipher methods were quite similar, and
+both required a single for loop in their implementation. We also designed our
+strings that we were encrypting in a humorous way related to Computer Science,
+to add even more fun to what we had creating this project already!
 
 ## Implementation
 In order to implement each algorithm, we used for loops to iterate through and
