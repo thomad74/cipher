@@ -17,7 +17,9 @@ public class VigenereCipher extends Cipher {
   }
 
   /**
-    * JavaDoc Comment.
+    * This public String calls a method cipher that uses a String called source
+    * to cipher through the phrase in Experiment. It also uses the key to determine
+    * how the cipher works.
     */
 
   public String cipher(String source) {
