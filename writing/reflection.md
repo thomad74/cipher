@@ -60,7 +60,10 @@ fit everyone's schedule to work on the project together. This led to a large amo
 of individual work.
 
 ## Robert's Reflection
-The fourth paragraph will discuss the third team member's insights.
+The fourth paragraph will discuss the third team member's insights. This lab
+required me to explore the real-world applications of computer science. The fourth
+paragraph will discuss the third team member's insights. This lab required me to
+explore the real-world applications of computer science.
 
 ## Jordan's Reflection
 This lab had it's difficulties. It was hard to implement the cipher in our
