@@ -16,4 +16,10 @@ import java.util.Arrays;
 
 public class TestResultsTable {
 
+  @Test
+  public void testConstructResultsTableNotNull() {
+    ResultsTable table = new ResultsTable(5);
+    long[][] results = table.getResultsTable();
+    assertTrue(results != null);
+  }
 }
