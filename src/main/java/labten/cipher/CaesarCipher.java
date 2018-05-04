@@ -49,10 +49,11 @@ public class CaesarCipher extends Cipher {
     String[] sorted = new String[source.length];
 
     int key = 1;
-// Makes a copy of the source array list
+    // Makes a copy of the source array list
     System.arraycopy(source, ARRAY_START, sorted, ARRAY_START, source.length);
-// iterates through the sorted array list and changes all the characters to upper case
+    // iterates through the sorted array list and changes all the characters to upper case
     for (int i = 0; i < sorted.length; i++) {
+<<<<<<< HEAD
       //sorted[i] = sorted[i].toUpperCase();
     //}
 
@@ -85,8 +86,9 @@ public class CaesarCipher extends Cipher {
       //   char ch = (char)(((int)sorted.charAt(i) + shift - 97) % 26 + 97);
       //   result.append(ch);
       // }
+=======
+>>>>>>> 7da8502df7e76f45eebbd869b675f5ea5abf312f
 
-      //sorted = sorted.toUpperCase();
 
     }
     return source;
