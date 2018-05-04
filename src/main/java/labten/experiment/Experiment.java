@@ -16,7 +16,14 @@ import labten.data.ResultsTable;
 public class Experiment {
 
   /** Run the ciphering experiment. */
+  /** Demonstrate the use of the Caesar algorithm. */
   public static void main(String[] args) {
+    //System.out.println(cipher("abc", 1));
+    String[] letters = {"fortniterulez"};
+    System.out.println("Before: " + java.util.Arrays.toString(letters));
+    String[] sortedLetters = (new CaesarCipher()).cipher(letters);
+    System.out.println("After : " + java.util.Arrays.toString(sortedLetters));
+    System.out.println();
     RunCampaign runCipherCampaign = new RunCampaign();
 
     // Create a Caesar cipher and run it in a campaign
@@ -37,5 +44,4 @@ public class Experiment {
     System.out.println(vigenereCipherResultsTable.toString());
     System.out.println();
   }
-
 }
