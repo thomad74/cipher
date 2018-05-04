@@ -32,12 +32,18 @@ public class TestVigenereCipher {
   /** The starting character. */
   private static char STARTING_CHARACTER = 'a';
 
-  // @Test
-  // public void TestVigenereCipherA() {
-  //   assertEquals(vigenereCipher.cipher("a"), "b");
-  // }
-  // @Test
-  // public void TestVigenereCipherB() {
-  //   assertEquals(vigenereCipher.cipher("b"), "c");
-  // }
+  @Test
+  public void testVigenereCipherA() {
+    assertEquals(vigenereCipher.cipher("a"), "L");
+  }
+
+  @Test
+  public void testVigenereCipherB() {
+    assertEquals(vigenereCipher.cipher("b"), "M");
+  }
+  
+  @Test
+  public void testVigenereCipherC() {
+    assertEquals(vigenereCipher.cipher("c"), "N");
+  }
 }
