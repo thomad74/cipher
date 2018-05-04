@@ -22,16 +22,16 @@ public class TestCaesarCipher {
 
   @Test
   public void testCaesarCipherA() {
-    assertEquals(caesarCipher.cipher("a"), "b");
+    assertEquals(caesarCipher.cipher("a"), "B");
   }
 
   @Test
   public void testCaesarCipherB() {
-    assertEquals(caesarCipher.cipher("b"), "c");
+    assertEquals(caesarCipher.cipher("b"), "C");
   }
 
   @Test
   public void testCaesarCipherC() {
-    assertEquals(caesarCipher.cipher("c"), "d");
+    assertEquals(caesarCipher.cipher("c"), "D");
   }
 }
