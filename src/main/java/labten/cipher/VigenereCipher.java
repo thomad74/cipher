@@ -16,19 +16,33 @@ public class VigenereCipher extends Cipher {
     name = "VigenereCipher";
   }
 
-
   /**
-   * TODO:An implementation of the Vigenere algorithm.
-   *
-   *
-   */
-
+    * JavaDoc Comment.
+    */
   public String cipher(String source) {
-    //int length = source.length;
-    //char[] sorted = new char[source.length];
-    //System.arraycopy(source, ARRAY_START, sorted, ARRAY_START, source.length);
-
-
-    return source;
+    String key = "fortnite";
+    String res = "";
+    source = source.toUpperCase();
+    for (int i = 0, j = 0; i < source.length(); i++) {
+      char index = source.charAt(i);
+      if (index < 'A' || index > 'Z') {
+        continue;
+      }
+      res += (char) ((index + key.charAt(j) - 2 * 'A') % 26 + 'A');
+      j = j++ % key.length();
+    }
+    return res;
   }
 }
+      // public String decrypt(String source, final String key) {
+      //   String res = "";
+      //   source = source.toUpperCase();
+      //   for (int i = 0, j = 0; i < text.length(); i++) {
+      //     char c = text.charAt(i);
+      //     if (c < 'A' || c > 'Z')
+      //       continue;
+      //       res += (char) ((c - key.charAt(j) + 26) % 26 + 'A');
+      //       j = ++j % key.length();
+      //   }
+      //     return res;
+      // }
