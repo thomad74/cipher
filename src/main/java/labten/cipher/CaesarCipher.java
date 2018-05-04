@@ -1,8 +1,7 @@
 package labten.cipher;
 
-import java.util.Arrays;
 import labten.experiment.Experiment;
-
+import java.util.Arrays;
 
 /**
  * An implementation of the Caesar algorithm.
