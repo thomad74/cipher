@@ -1,11 +1,11 @@
 package labten;
 
-//import static org.junit.Assert.assertArrayEquals;
-//import static org.junit.Assert.assertEquals;
-//import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import labten.cipher.VigenereCipher;
-//import org.junit.Test;
+import org.junit.Test;
 
 import java.util.Random;
 
@@ -29,4 +29,11 @@ public class TestVigenereCipher {
   /** The starting character. */
   private static char STARTING_CHARACTER = 'a';
 
+  @Test
+  public void TestVigenereCipherA() {
+    assertEquals(vigenereCipher.cipher("a"), "b");
+  }
+  @Test
+  public void TestVigenereCipherB() {
+    assertEquals(vigenereCipher.cipher("b"), "c");
 }
